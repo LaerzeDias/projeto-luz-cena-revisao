@@ -1,21 +1,26 @@
-🎬 Projeto: Luz & Cena – Landing Page de Cinema
+# 🎬 Luz & Cena - Cinema Experience
 
-Desenvolvimento de uma Landing Page responsiva para um cinema fictício, focada em alta performance visual e experiência do usuário (UX). O projeto simula uma interface moderna de streaming/venda de ingressos, priorizando a semântica do HTML5 e recursos modernos de CSS.
+![GitHub repo size](https://img.shields.io/github/repo-size/seu-usuario/luz-e-cena?style=for-the-badge)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-Destaques Técnicos & Soluções de Engenharia
-UX Avançada com CSS Moderno: Implementação de feedbacks em tempo real na seção de Newsletter utilizando a pseudo-classe :has(), permitindo validações visuais complexas (como estados de erro e desabilitação de botões) sem a necessidade imediata de JavaScript.
+> Landing page moderna para um cinema fictício, focada em performance visual, semântica e experiência do usuário.
 
-Arquitetura de Layout Sticky: Desenvolvimento de um cabeçalho de navegação (cartaz__cabecalho) com position: sticky. O desafio técnico consistiu em manter o elemento fixo apenas dentro da sua seção de contexto, garantindo que o alinhamento do conteúdo respeitasse o max-width global do projeto.
+## 🚀 Sobre o Projeto
 
-Acessibilidade (A11y): Aplicação rigorosa de semântica HTML, utilizando tags como <main>, <section>, <label> e atributos ARIA (aria-live, aria-label) para garantir que a interface seja compreensível por tecnologias assistivas e leitores de tela.
+O **Luz & Cena** foi desenvolvido como um desafio técnico para aplicar as funcionalidades mais modernas do CSS3 e as melhores práticas de HTML5. O objetivo principal foi criar uma interface imersiva que se comporta como uma aplicação real, tratando desde a acessibilidade até animações complexas dirigidas pelo scroll.
 
-Design Responsivo Intrinseco: Uso de estratégias de Flexbox e flex-basis para criar componentes que se adaptam fluidamente a diferentes tamanhos de tela (Mobile, Tablet, Desktop) com o mínimo de Media Queries possível.
+---
 
-Micro-interações & Polimento Visual: Implementação de efeitos de hover com pseudo-elementos (::after) para navegação e controle de interação de texto (user-select) para reforçar a imersão estética dos banners.
+## 🛠️ Destaques Técnicos
 
-Tecnologias Utilizadas
-HTML5 (Semântico e estrutural)
+### 🧪 CSS Moderno & Validação Nativa
+Utilização da pseudo-classe `:has()` para realizar validações de formulário complexas sem JavaScript. 
+* O botão de inscrição da Newsletter entra em estado *disabled* visual e a mensagem de erro é disparada automaticamente com base na validade do e-mail.
 
-CSS3 (Variáveis, Flexbox, Sticky Positioning, Pseudo-classes modernas)
+### 📍 Sticky Contextual
+Implementação de um cabeçalho de categorias (`Em cartaz` / `Em breve`) utilizando `position: sticky`. 
+* O elemento permanece fixo no topo apenas enquanto o usuário navega pela seção de filmes, respeitando o limite do container pai.
 
-Metodologia BEM (Block Element Modifier) para organização e escalabilidade do código.
+### 🎭 Scroll-Driven Animations
+Uso de `view-timeline` e `animation-range` para revelar títulos e elementos conforme entram no campo de visão do usuário, criando uma nave
