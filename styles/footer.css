@@ -1,0 +1,113 @@
+
+.footer {
+    padding: 3.75rem 3.75rem;
+    background-color: var(--cor-texto);
+}
+
+.footer__conteiner {
+    max-width: 92.5rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: var(--fonte-texto);
+    color: var(--cor-de-fundo-input);
+    line-height: 1.2;
+}
+
+.footer__logo-texto {
+    font-size: var(--font-size-m);
+    line-height: 1.5;
+    margin-top: 1.5rem;
+}
+
+.footer__conteiner-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+}
+
+.footer__lista {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xs);
+}
+
+.footer__lista-redes {
+    flex-direction: row;
+}
+
+.footer__lista-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--cor-de-fundo-input);
+}
+
+.footer__lista-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--cor-de-fundo-input);
+    position: absolute;
+    transition: width 0.3s ease;
+}
+
+.footer__lista-link:hover::after {
+    width: 100%;
+}
+
+.footer__lista-link--icon:hover .foooter__lista-img {
+    filter: brightness(1.5);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.about {
+    padding: 1.25rem var(--padding-m);
+    text-align: center;
+}
+
+.about__texto {
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+    
+    .footer__logo {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .footer__conteiner {
+        row-gap: 2.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .footer {
+        padding: 3.75rem 1.5rem;
+    }
+
+    .footer__conteiner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__lista-redes {
+        justify-content: center;
+    }
+}

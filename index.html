@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luz & Cena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./styles/header.css" />
+  <link rel="stylesheet" href="./styles/banner.css" />
+  <link rel="stylesheet" href="./styles/cartaz.css" />
+  <link rel="stylesheet" href="./styles/combo.css" />
+  <link rel="stylesheet" href="./styles/newsletter.css" />
+  <link rel="stylesheet" href="./styles/separador.css" />
+  <link rel="stylesheet" href="./styles/footer.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="header__nav-lista">
+        <li class="header__nav-item header__nav-menu">
+          <img src="images/menu.svg" alt="Menu de opções">
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-logo" href="#">
+            <img src="images/Logo.svg" alt="Logo Luz & Cena">
+          </a>
+        </li>
+        <li class="header__nav-item header__nav-item--link">
+          <a class="header__nav-link" href="#">
+            Eventos
+          </a>
+        </li>
+        <li class="header__nav-item header__nav-item--link">
+          <a class="header__nav-link" href="#">
+            Clube de Fidelidade
+          </a>
+        </li>
+        <li class="header__nav-item header__nav-item--link">
+          <a class="header__nav-link" href="#">
+            Sobre nós
+          </a>
+        </li>
+        <li class="header__nav-item header__nav-item--pesquisa">
+          <label class="header__nav-campo_pesquisa">
+            <input class="header__nav-input" type="search" id="search" placeholder="Campinas - São Paulo">
+          </label>
+        </li>
+        <li class="header__nav-item">
+          <div class="header__nav-icons">
+            <a class="header__nav-icon" href="#" aria-label="carrinho de compras">
+              <img src="images/Carrinho.svg" alt="Meu carrinho de compras">
+            </a>
+            <a class="header__nav-icon" href="#" aria-label="perfil do usuário">
+              <img src="images/Perfil.svg" alt="Meu perfil">
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="principal">
+    <section class="banner">
+      <div class="banner__conteiner">
+        <h1 class="banner__titulo">Onde a realidade <span>encontra a fantasia!</span></h1>
+      </div>
+    </section>
+    <section class="cartaz">
+      <div class="cartaz__cabecalho">
+        <ul class="cartaz__abas" role="tablist" aria-label="navegação de categorias">
+          <li class="cartaz__abas-item cartaz__abas-item--ativo" role="tab" aria-selected="true">
+            <a class="cartaz__abas-link" href="#">Em cartaz</a>
+          </li>
+          <li class="cartaz__abas-item cartaz__abas-item--inativo">
+            <a class="cartaz__abas-link" href="#">Em breve</a>
+          </li>
+        </ul>
+        <label class="cartaz__pesquisa">
+          <input class="cartaz__input" type="search" id="cartaz__pesquisa-input"
+            placeholder="O que deseja assistir hoje?" aria-label="campo para busca de filme">
+        </label>
+      </div>
+      <div class="cartaz__conteiner">
+        <h2 class="cartaz__titulo">Em Cartaz</h2>
+        <ul class="cartaz__lista">
+          <li class="cartaz__lista-item">
+            <a class="cartaz__abas-item--link" href="#">
+              <img class="cartaz__lista-poster" src="images/poster/oNexusDoTempo.png" alt="O Nexus do Tempo">
+              <div class="cartaz__lista-conteudo">
+                <h3 class="cartaz__lista-titulo">O Nexus do Tempo</h3>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-categoria">Suspense</p>
+                  <p class="cartaz__lista-texto cartaz__lista-estilo">2D</p>
+                </div>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-duracao">110 minutos</p>
+                  <p class="cartaz__lista-texto cartaz__lista-classificacao">12 anos</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="cartaz__lista-item">
+            <a class="cartaz__abas-item--link" href="#">
+              <img class="cartaz__lista-poster" src="images/poster/amanhecer.png" alt="Amanhecer">
+              <div class="cartaz__lista-conteudo">
+                <h3 class="cartaz__lista-titulo">Amanhecer</h3>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-categoria">Romance</p>
+                  <p class="cartaz__lista-texto cartaz__lista-estilo">2D</p>
+                </div>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-duracao">90 minutos</p>
+                  <p class="cartaz__lista-texto cartaz__lista-classificacao--livre">Livre</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="cartaz__lista-item">
+            <a class="cartaz__abas-item--link" href="#">
+              <img class="cartaz__lista-poster" src="images/poster/amigosDoBosque.png" alt="Amigos do Bosque Mágico">
+              <div class="cartaz__lista-conteudo">
+                <h3 class="cartaz__lista-titulo">Amigos do Bosque Mágico</h3>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-categoria">Animação</p>
+                  <p class="cartaz__lista-texto cartaz__lista-estilo">2D</p>
+                </div>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-duracao">80 minutos</p>
+                  <p class="cartaz__lista-texto cartaz__lista-classificacao--livre">Livre</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="cartaz__lista-item">
+            <a class="cartaz__abas-item--link" href="#">
+              <img class="cartaz__lista-poster" src="images/poster/caminhoParaOAbismo.png" alt="Caminho para o Abismo">
+              <div class="cartaz__lista-conteudo">
+                <h3 class="cartaz__lista-titulo">Caminho para o Abismo</h3>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-categoria">Horror</p>
+                  <p class="cartaz__lista-texto cartaz__lista-estilo">2D</p>
+                </div>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-duracao">103 minutos</p>
+                  <p class="cartaz__lista-texto cartaz__lista-classificacao">14 anos</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="cartaz__lista-item">
+            <a class="cartaz__abas-item--link" href="#">
+              <img class="cartaz__lista-poster" src="images/poster/desastresDoEscritorio.png"
+                alt="Desastres do Escritório">
+              <div class="cartaz__lista-conteudo">
+                <h3 class="cartaz__lista-titulo">Desastres do Escritório</h3>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-categoria">Comédia</p>
+                  <p class="cartaz__lista-texto cartaz__lista-estilo">2D</p>
+                </div>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-duracao">85 minutos</p>
+                  <p class="cartaz__lista-texto cartaz__lista-classificacao--livre">Livre</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="cartaz__lista-item">
+            <a class="cartaz__abas-item--link" href="#">
+              <img class="cartaz__lista-poster" src="images/poster/mestresDoFuturo.png"
+                alt="Mestres do Futuro: Tecnologias que mudam o mundo">
+              <div class="cartaz__lista-conteudo">
+                <h3 class="cartaz__lista-titulo">Mestres do Futuro: Tecnologias que mudam o mundo</h3>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-categoria">Documentário</p>
+                  <p class="cartaz__lista-texto cartaz__lista-estilo">2D</p>
+                </div>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-duracao">120 minutos</p>
+                  <p class="cartaz__lista-texto cartaz__lista-classificacao--livre">Livre</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="cartaz__lista-item">
+            <a class="cartaz__abas-item--link" href="#">
+              <img class="cartaz__lista-poster" src="images/poster/laEsperanza.png" alt="La Esperanza">
+              <div class="cartaz__lista-conteudo">
+                <h3 class="cartaz__lista-titulo">La Esperanza</h3>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-categoria">Drama</p>
+                  <p class="cartaz__lista-texto cartaz__lista-estilo">2D</p>
+                </div>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-duracao">98 minutos</p>
+                  <p class="cartaz__lista-texto cartaz__lista-classificacao">12 anos</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="cartaz__lista-item">
+            <a class="cartaz__abas-item--link" href="#">
+              <img class="cartaz__lista-poster" src="images/poster/amigoDaSombra.png" alt="Amigo da Sombra">
+              <div class="cartaz__lista-conteudo">
+                <h3 class="cartaz__lista-titulo">Amigo da Sombra</h3>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-categoria">Ficção Científica</p>
+                  <p class="cartaz__lista-texto cartaz__lista-estilo--3D">3D</p>
+                </div>
+                <div class="cartaz__lista-conteudo_detalhes">
+                  <p class="cartaz__lista-texto cartaz__lista-duracao">105 minutos</p>
+                  <p class="cartaz__lista-texto cartaz__lista-classificacao">10 anos</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="combo">
+      <div class="combo__conteiner">
+        <h2 class="combo__titulo">Combo <span>Dragon’s Ascent</span></h2>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="newsletter__conteiner">
+        <h2 class="newsletter__titulo">Inscreva-se para ganhar descontos!</h2>
+        <form class="newsletter__email">
+          <div class="newsletter__email-conteiner">
+            <p class="newsletter__email--erro" aria-live="polite">Digite um e-mail válido</p>
+            <label class="newsletter__campo-email">
+              <input class="newsletter__input" type="email" placeholder="Digite seu melhor email"
+                aria-label="campo para digitação do email" required>
+            </label>
+          </div>
+          <button class="newsletter__submit" type="submit">Inscrever</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__conteiner">
+      <div class="footer__logo">
+        <img src="images/Logo-white.svg" alt="Logo Luz & Cena">
+        <p class="footer__logo-texto">Onde a realidade encontra a fantasia!</p>
+      </div>
+      <div class="footer__funcionamento footer__conteiner-detalhes">
+        <h3 class="footer__titulo">Funcionamento</h3>
+        <ul class="footer__lista">
+          <li class="footer__lista-item">
+            Segunda a Sexta - 16h às 00h
+          </li>
+          <li class="footer__lista-item">
+            <a class="footer__lista-link" href="mailto:ola@luzecena.com.br">ola@luzecena.com.br</a>
+          </li>
+          <li class="footer__lista-item">
+            <a class="footer__lista-link" href="tel:+550800541320">0800 541 320</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__institucional footer__conteiner-detalhes">
+        <h3 class="footer__titulo">Institucional</h3>
+        <ul class="footer__lista">
+          <li class="footer__lista-item">
+            <a class="footer__lista-link" href="#">Sobre nós</a>
+          </li>
+          <li class="footer__lista-item">
+            <a class="footer__lista-link" href="#">Para empresas</a>
+          </li>
+          <li class="footer__lista-item">
+            <a class="footer__lista-link" href="#">Club fidelidade</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__redes footer__conteiner-detalhes">
+        <h3 class="footer__titulo">Siga nossas redes:</h3>
+        <ul class="footer__lista footer__lista-redes">
+          <li class="footer__lista-item">
+            <a class="footer__lista-link--icon" href="#" aria-label="Siga-nos no Whatsapp">
+              <img class="foooter__lista-img" src="images/Whatsapp.svg" alt="Whatsapp">
+            </a>
+          </li>
+          <li class="footer__lista-item">
+            <a class="footer__lista-link--icon" href="#" aria-label="Siga-nos no Instagram">
+              <img class="foooter__lista-img" src="images/Instagram.svg" alt="Instagram">
+            </a>
+          </li>
+          <li class="footer__lista-item">
+            <a class="footer__lista-link--icon" href="#" aria-label="Siga-nos no Tiktok">
+              <img class="foooter__lista-img" src="images/Tiktok.svg" alt="Tiktok">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <section class="about">
+    <p class="about__texto">Desenvolvido por Laerze durante o curso de HTML e CSS da Alura. Projeto fictício sem fins comerciais.</p>
+  </section>
+</body>
+
+</html>

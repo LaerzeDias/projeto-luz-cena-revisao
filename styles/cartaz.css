@@ -1,0 +1,227 @@
+
+.cartaz {
+    padding: var(--padding-xxl) 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartaz__conteiner {
+    max-width: var(--max-width-block);
+    margin: 0 auto;
+}
+
+.cartaz__cabecalho {
+    padding: 1rem 0;
+    background-color: var(--cor-de-fundo);
+    top: 0;
+    position: sticky;
+    z-index: 10;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.cartaz__abas {
+    display: flex;
+    gap: 1rem;
+    font-family: var(--fonte-texto);
+    font-size: var(--font-size-m);
+    line-height: 1.5;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: var(--max-width-block);
+}
+
+.cartaz__abas-link {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+.cartaz__abas-link {
+    padding-bottom: 0.25rem;
+}
+
+.cartaz__abas-item--ativo .cartaz__abas-link{
+    font-weight: 700;
+    border-bottom: 2px solid var(--cor-texto);
+}
+
+.cartaz__abas-item--inativo:hover .cartaz__abas-link{
+    border-bottom: 1px solid var(--cor-texto);
+}
+
+.cartaz__pesquisa {
+    display: block;
+    max-width: 42.375rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    border-radius: 8px;
+    padding: 0 1.5rem;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: right 1.5rem center;
+    border: 1px solid var(--border-color);
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    transition: border 0.3s ease;
+}
+
+.cartaz__input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    width: 100%;
+    height: 3.2rem;
+    padding-right: 2rem;
+}
+
+.cartaz__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: var(--font-size-xl);
+    color: var(--cor-texto);
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 2.5rem;
+}
+
+.cartaz__lista {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--gap-m);
+    row-gap: var(--gap-m);
+    justify-content: center;
+}
+
+.cartaz__lista-item {
+    flex: 1 1 17.625rem;
+    max-width: 17.625rem;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--cor-texto-claro);
+    box-shadow: var(--box-shadow-card);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+
+.cartaz__abas-item--link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cartaz__lista-poster {
+    object-fit: contain;
+    width: 100%;
+}
+
+.cartaz__lista-conteudo {
+    padding: var(--gap-s);
+    font-family: var(--fonte-texto);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cartaz__lista-titulo {
+    text-decoration: none;
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    margin-bottom: auto;
+    padding-bottom: var(--padding-s);
+}
+
+.cartaz__lista-conteudo_detalhes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartaz__lista-conteudo_detalhes:nth-child(3) {
+    margin-top: 0.5rem;
+}
+
+.cartaz__lista-texto {
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.cartaz__lista-estilo {
+    background-color: var(--cor-estilo-2d);
+    font-weight: 500;
+}
+
+.cartaz__lista-estilo--3D {
+    background-color: var(--cor-estilo-3d);
+    font-weight: 500;
+}
+
+.cartaz__lista-classificacao {
+    background-color: var(--cor-faixa-etaria);
+    font-weight: 500;
+}
+
+.cartaz__lista-classificacao--livre {
+    background-color: var(--cor-faixa-etaria-livre);
+    font-weight: 500;
+}
+
+.cartaz__pesquisa:hover {
+    border: 1px solid black;
+}
+
+.cartaz__pesquisa:has(.cartaz__input:focus) {
+    border: 1px solid black;
+}
+
+.cartaz__input::placeholder {
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+}
+
+.cartaz__input:focus::placeholder {
+    color: transparent;
+}
+
+.cartaz__input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.cartaz__lista-item:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.35);
+}
+
+@media (max-width: 1200px) {
+
+    .cartaz {
+        padding: 2.5rem 3.75rem;
+    }
+
+    .cartaz__pesquisa {
+        max-width: 100%;
+    }
+
+    .cartaz__titulo {
+        font-size: 2rem;
+    }
+
+    .cartaz__lista-item:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .cartaz {
+        padding: 2.5rem 1.5rem;
+    }
+}
